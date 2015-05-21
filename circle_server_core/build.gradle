@@ -1,13 +1,21 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 
-sourceCompatibility = 1.5
+sourceCompatibility = 1.8
 version = '1.0'
 jar {
     manifest {
         attributes 'Implementation-Title': 'circle_server_core',
                    'Implementation-Version': version
     }
+}
+
+eclipse {
+	project {
+		name = 'circle_server_core'
+
+		referencedProjects 'circle_api'
+	}
 }
 
 repositories {
