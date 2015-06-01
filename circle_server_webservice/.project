@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>circle_server_core</name>
+	<name>circle_server_webservice</name>
 	<comment></comment>
 	<projects>
-		<project>:circle_api</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

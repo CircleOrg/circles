@@ -1,4 +1,4 @@
-package net.circleorg.circles.server.core.entity;
+package net.circleorg.circles.api.entity;
 
 import java.util.UUID;
 

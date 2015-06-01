@@ -1,6 +1,6 @@
 package net.circleorg.circles.server.core.entity.mapping;
 
-import net.circleorg.circles.server.core.entity.Device;
+import net.circleorg.circles.api.entity.Device;
 
 import org.mongolink.domain.mapper.AggregateMap;
 

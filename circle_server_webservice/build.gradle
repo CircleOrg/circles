@@ -1,31 +1,25 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
-apply plugin: 'war'
 
 sourceCompatibility = 1.8
 version = '1.0'
 jar {
     manifest {
-        attributes 'Implementation-Title': 'circle_server_android',
+        attributes 'Implementation-Title': 'circle_server_webservice',
                    'Implementation-Version': version
     }
 }
 
 repositories {
     mavenCentral()
-    maven {
-      url 'http://repo1.maven.org/maven2'
-    }
-    maven {
-      url 'https://github.com/slorber/gcm-server-repository/raw/master/releases/'
-    }
 }
 
 dependencies {
     compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
-    compile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'
-    compile group: 'com.google.android.gcm', version: '1.0.2', name: 'gcm-server'
-
+    
+    compile files('../circle_server_core/bin')
+    compile files('../circle_api/bin')
+    
     testCompile group: 'junit', name: 'junit', version: '4.+'
 }
 

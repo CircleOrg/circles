@@ -14,7 +14,7 @@ eclipse {
 	project {
 		name = 'circle_server_core'
 
-		referencedProjects 'circle_api'
+		referencedProjects ':circle_api'
 	}
 }
 
@@ -26,6 +26,8 @@ dependencies {
     compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
     compile group: 'org.mongolink', name: 'mongolink', version: '1.1.6'
 
+	compile files('../circle_api/bin')
+	
     testCompile group: 'junit', name: 'junit', version: '4.+'
 }
 
