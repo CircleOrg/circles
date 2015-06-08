@@ -1,2 +1,3 @@
 
-include "circle_server_core", "circle_server_webservice"
+includeFlat 'circle_api'
+include 'circle_server_core', 'circle_server_webservice', 'circle_server_android', 'circle_server_ios', 'circle_server_vaadin', 'circle_server_winphone'
